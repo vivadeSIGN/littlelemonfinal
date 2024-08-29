@@ -85,7 +85,7 @@ body{
   
   h2 {
     color: #F4CE14;
-    font-size: 40px;
+    font-size: 64px;
   }
   
   h3 {
@@ -100,6 +100,12 @@ body{
   h5 {
     color:#000000;
     font-size: 25px;
+  }
+
+  h6 {
+    color:#000000;
+    font-size: 12px;
+    font-weight: lighter;
   }
 
   .banner p {
@@ -184,17 +190,25 @@ body{
     }
 
   .menu-img{
-    position: absolute;
-    left: 13%;
-    top: 80%;
-    width: 180px;
+    display: flex;
+    justify-content: center;
   }
 
-  .menu-img img {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
+  .menu-centerimg img {
+    width: 30%; /* Adjust the width as needed */
+    margin: 5px;
   }
+
+  @media (max-width: 768px) {
+    .menu-img {
+        flex-direction: column; /* Display images vertically on smaller screens */
+        align-items: center;
+    }
+
+    .menu-centerimg img {
+        width: 100%; /* Set image width to 100% on smaller screens */
+    }
+}
 
   .menu p {
     color: #000000;

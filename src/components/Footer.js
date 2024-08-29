@@ -5,10 +5,6 @@ const Footer = () => {
     return(
         <footer className="">
             <section>
-            <div className="company-info">
-                <img src={small_logo} alt=""/>
-                <p>Little Lemon © 2024</p>
-            </div>
             <div>
                 <h3>Important Links</h3>
             <ul>
@@ -35,6 +31,10 @@ const Footer = () => {
                 <li><a href="/">Instagram</a></li>
                 <li><a href="/">Tik Tok</a></li>
             </ul>
+            </div>
+            <div className="company-info">
+                <img src={small_logo} alt=""/>
+                <h6>Little Lemon © 2024</h6>
             </div>
             </section>
         </footer>
